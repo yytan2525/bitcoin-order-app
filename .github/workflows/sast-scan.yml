@@ -33,7 +33,8 @@ jobs:
             --nvdDatafeed 'https://open-vulnerability-data-mirror-production.up.railway.app/nvdcve-{0}.json.gz' \
             --out . \
             --scan . \
-            --disableOssIndex
+            --disableOssIndex \
+            --disableCentral
 
       - name: Archive SAST report
         uses: actions/upload-artifact@v4
